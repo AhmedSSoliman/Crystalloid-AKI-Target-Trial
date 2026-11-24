@@ -26,7 +26,8 @@ This repository contains the full analysis pipeline, results, figures, and manus
 ```
 Crystalloid-AKI-Target-Trial/
 │
-├── causal_ai/                        # MIMIC-IV analysis
+├── 01_mimic/                         # MIMIC-IV critical care analysis
+│   ├── 00_exploratory/               # Initial EDA notebooks and figures
 │   ├── analysis/
 │   │   ├── full_analysis.py          # AIPW primary + SA1–6a + bootstrap
 │   │   ├── sensitivity_analyses.py   # SA5–SA10, PS matching, Fine-Gray, E-value
@@ -35,12 +36,13 @@ Crystalloid-AKI-Target-Trial/
 │   │   ├── results_summary.csv       # 14 analysis results
 │   │   ├── evalue_summary.csv        # E-value
 │   │   └── figures/                  # All figures (panels/ + standalone/)
+│   ├── docs/                         # Proposal and supplementary docs
 │   └── manuscript/
 │       ├── manuscript.docx           # Full MIMIC paper
 │       ├── final_report.docx         # GMS 7858 final report
 │       └── progress_report.docx      # Project progress report
 │
-├── idealist_causal/                  # IDEALIST perioperative analysis
+├── 02_idealist/                      # IDEALIST perioperative analysis
 │   ├── analysis/
 │   │   ├── extract_cohort.py         # Cohort extraction
 │   │   ├── full_analysis.py          # AIPW primary + SA1–6a
@@ -54,7 +56,7 @@ Crystalloid-AKI-Target-Trial/
 │   │   └── manuscript_idealist.docx  # Full IDEALIST paper
 │   └── run_idealist.sh               # HiPerGator sbatch master script
 │
-└── combined/                         # Combined multi-cohort paper
+└── 03_combined/                      # Combined multi-cohort paper
     ├── analysis/
     │   ├── make_combined_figures.py  # Cross-cohort figures
     │   └── figures/
@@ -127,7 +129,7 @@ pip install pandas numpy scikit-learn matplotlib lifelines pyarrow joblib
 
 ### MIMIC-IV
 ```bash
-cd causal_ai/analysis
+cd 01_mimic/analysis
 python3 full_analysis.py
 python3 sensitivity_analyses.py
 python3 make_figures.py
@@ -136,13 +138,13 @@ python3 make_paper_figures.py
 
 ### IDEALIST (HiPerGator)
 ```bash
-cd idealist_causal
+cd 02_idealist
 sbatch run_idealist.sh
 ```
 
 ### Combined figures
 ```bash
-cd combined/analysis
+cd 03_combined/analysis
 python3 make_combined_figures.py
 ```
 

@@ -17,10 +17,15 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
-# Large raw figure duplicates at root (kept in analysis/figures/)
+# Stray root-level files (kept in cohort subdirs)
 /fig_*.png
 /cohort_analytic.parquet
 /parquet/
+
+# Legacy data files inside subdirs
+02_idealist/analysis/cohort_*.parquet
+02_idealist/analysis/ps_*.npy
+02_idealist/analysis/cohort_full_ps_idealist.parquet
 
 # Env
 .env
