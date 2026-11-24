@@ -1,0 +1,27 @@
+# Data files (too large / governed by DUA)
+*.parquet
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Logs
+logs/
+*.out
+*.err
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Large raw figure duplicates at root (kept in analysis/figures/)
+/fig_*.png
+/cohort_analytic.parquet
+/parquet/
+
+# Env
+.env
+*.env

@@ -1,0 +1,2 @@
+quantity,risk_lr,risk_ns,rr,rr_lower,rr_upper,evalue_point,evalue_ci,crosses_null
+Primary AIPW,0.22239,0.22374,0.9939662107803701,0.9413605077321892,1.0387950299454725,1.084219420641119,1.0,True
