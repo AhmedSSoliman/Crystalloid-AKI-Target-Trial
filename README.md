@@ -119,6 +119,149 @@ SA1: No PS trimming · SA2: Stricter Cr ≤ 2.0 · SA3: Composite death-or-AKI �
 
 ---
 
+## Figures
+
+### Cross-Cohort Comparison (03_combined)
+
+**Primary Estimates: Head-to-Head**  
+*AIPW risk difference (pp) with 95% bootstrap CI — MIMIC-IV vs IDEALIST*
+
+![Primary Comparison](03_combined/analysis/figures/fig_primary_comparison.png)
+
+---
+
+**Cross-Cohort Sensitivity Analysis Forest Plot**  
+*Shared sensitivity analyses run identically in both cohorts*
+
+![Cross-Cohort Forest](03_combined/analysis/figures/fig_cross_cohort_forest.png)
+
+---
+
+**Unified Baseline Characteristics (Table 1)**  
+*Demographics and comorbidities side-by-side across both cohorts*
+
+![Unified Table 1](03_combined/analysis/figures/fig_unified_table1.png)
+
+---
+
+### MIMIC-IV Figures (01_mimic)
+
+**Panel 1 — Study Design & Cohort Flow**
+
+![MIMIC Panel 1](01_mimic/analysis/figures/panels/panel_1_design.png)
+
+---
+
+**Panel 2 — Propensity Score Balance**
+
+![MIMIC Panel 2](01_mimic/analysis/figures/panels/panel_2_balance.png)
+
+---
+
+**Panel 3 — Treatment Effect Estimates**
+
+![MIMIC Panel 3](01_mimic/analysis/figures/panels/panel_3_effects.png)
+
+---
+
+**Panel 4 — Competing Events (Fine-Gray)**
+
+![MIMIC Panel 4](01_mimic/analysis/figures/panels/panel_4_competing.png)
+
+---
+
+**Causal DAG**
+
+![Causal DAG](01_mimic/analysis/figures/fig_causal_dag.png)
+
+---
+
+**Propensity Score Overlap**
+
+![PS Overlap MIMIC](01_mimic/analysis/figures/fig_ps_overlap.png)
+
+---
+
+**Love Plot — Covariate Balance**
+
+![Love Plot MIMIC](01_mimic/analysis/figures/fig_love_plot.png)
+
+---
+
+**AIPW Primary Estimates + Sensitivity Analyses**
+
+![AIPW Results MIMIC](01_mimic/analysis/figures/fig_aipw_results.png)
+
+---
+
+**Subgroup Forest Plot**
+
+![Subgroup Forest MIMIC](01_mimic/analysis/figures/fig_subgroup_forest.png)
+
+---
+
+**Cumulative Incidence Functions (Competing Risks)**
+
+![CIF MIMIC](01_mimic/analysis/figures/fig_cif_competing.png)
+
+---
+
+**E-Value Sensitivity**
+
+![E-Value MIMIC](01_mimic/analysis/figures/fig_evalue.png)
+
+---
+
+**PS Matching Balance**
+
+![Matching Balance MIMIC](01_mimic/analysis/figures/fig_matching_balance.png)
+
+---
+
+### IDEALIST Figures (02_idealist)
+
+**Cohort Flow Diagram**
+
+![Cohort Flow IDEALIST](02_idealist/analysis/figures/fig_cohort_flow_idealist.png)
+
+---
+
+**Propensity Score Overlap**
+
+![PS Overlap IDEALIST](02_idealist/analysis/figures/fig_ps_overlap_idealist.png)
+
+---
+
+**Love Plot — Covariate Balance**
+
+![Love Plot IDEALIST](02_idealist/analysis/figures/fig_love_plot_idealist.png)
+
+---
+
+**AIPW Primary Estimates + Sensitivity Analyses**
+
+![AIPW Results IDEALIST](02_idealist/analysis/figures/fig_aipw_results_idealist.png)
+
+---
+
+**Subgroup Forest Plot**
+
+![Subgroup Forest IDEALIST](02_idealist/analysis/figures/fig_subgroup_forest_idealist.png)
+
+---
+
+**Cumulative Incidence Functions (Competing Risks)**
+
+![CIF IDEALIST](02_idealist/analysis/figures/fig_cif_idealist.png)
+
+---
+
+**E-Value Sensitivity**
+
+![E-Value IDEALIST](02_idealist/analysis/figures/fig_evalue_idealist.png)
+
+---
+
 ## Reproducing the Analysis
 
 ### Dependencies
